@@ -1,0 +1,514 @@
+/* Add these styles to the existing style.css file */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004d99;
+}
+
+/* Add some list styling for the aircraft page */
+.feature ul {
+    list-style-position: inside;
+    text-align: left;
+    padding: 1rem;
+}
+
+.feature ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    padding-top: 50px;
+    color: #333;
+}
+
+/* Navbar styles */
+header {
+    background-color: #1b1b1b;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #080808;
+    height: 50px;
+}
+
+nav {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo h1 {
+    color: #999;
+    font-size: 18px;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #999;
+    text-decoration: none;
+    padding: 15px 12px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: #000;
+}
+
+/* Hero section styles */
+.hero {
+    background: url('../img/clouds.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    color: #333;
+    width: 100%; /* Add this to ensure full width */
+    margin: 0 0 20px; /* Remove left/right margin */
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Features section */
+.features {
+    max-width: 1170px;
+    margin: 0 auto 20px;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%; /* Add this to ensure full width */
+}
+
+.feature {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 4px;
+    width: 100%; /* Add this to ensure full width */
+}
+
+.feature h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 6px 10px;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    text-decoration: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+
+.btn:hover {
+    background-color: #ebebeb;
+    border-color: #adadad;
+}
+
+.btn-primary:hover {
+    background-color: #3276b1;
+    border-color: #285e8e;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #e5e5e5;
+    padding: 20px 15px;
+    text-align: center;
+    color: #777;
+    font-size: 11px;
+}
+
+/* Container */
+main {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%; /* Add this to ensure full width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+    
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+/* Page Header */
+.page-header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.page-header h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Content Sections */
+.content-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.content-section h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.content-section h4 {
+    color: #428bca;
+    margin: 20px 0 10px;
+    font-size: 16px;
+}
+
+/* Lists */
+.content-section ul,
+.content-section ol {
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+.content-section ul li,
+.content-section ol li {
+    margin-bottom: 6px;
+}
+
+.content-section ul ul {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* Sections */
+.requirements-section,
+.costs-section,
+.process-section,
+.benefits-section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    margin: 25px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.cta-section p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.cta-section .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+/* Aircraft List Styles */
+.aircraft-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.aircraft-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.aircraft-image {
+    flex-shrink: 0;
+}
+
+.aircraft-image img {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.aircraft-details {
+    flex-grow: 1;
+}
+
+.aircraft-details h3 {
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.aircraft-rate {
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.aircraft-specs {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.aircraft-equipment ul {
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.aircraft-equipment li {
+    margin-bottom: 0.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .aircraft-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aircraft-image {
+        margin-bottom: 1rem;
+    }
+
+    .aircraft-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Add these styles to the existing style.css file */
+
+.membership-types {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.membership-type {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.membership-type h4 {
+    color: #2c5282;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.membership-highlights {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.membership-type ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.membership-type ul ul {
+    padding-left: 1rem;
+    margin-top: 0.25rem;
+}
+
+.membership-type li {
+    margin-bottom: 0.5rem;
+}
+
+.note-section {
+    background: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: 4px;
+    padding: 0.75rem;
+    margin: 1rem 0;
+}
+
+.note-section p {
+    color: #856404;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .membership-type {
+        padding: 1.5rem;
+    }
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.image-gallery a {
+    display: block;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.image-gallery a:hover {
+    transform: scale(1.02);
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.2s ease;
+    /* Add these properties for better image scaling quality */
+    image-rendering: -webkit-optimize-contrast;  /* For Webkit browsers */
+    -webkit-backface-visibility: hidden;  /* Reduces some artifacts in Safari */
+    backface-visibility: hidden;
+    transform: translateZ(0);  /* Forces GPU acceleration */
+}
+
+.image-gallery a:hover img {
+    transform: scale(1.1);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.stat-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.stat-card h3 {
+    color: #2c5282;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+    color: #4a5568;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
