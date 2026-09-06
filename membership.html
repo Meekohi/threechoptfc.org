@@ -3,19 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership - Three Chopt Flying Club</title>
+    <title>Membership &mdash; Three Chopt Flying Club</title>
+    <meta name="description" content="Membership levels, deposits, monthly dues and checkout requirements for Three Chopt Flying Club at KCHO, with a worked example of what a year of flying actually costs.">
+    <link rel="canonical" href="https://threechoptfc.org/membership.html">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="img/icon-32.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Three Chopt Flying Club">
+    <meta property="og:title" content="Membership &mdash; Three Chopt Flying Club">
+    <meta property="og:description" content="Membership levels, deposits, monthly dues and checkout requirements for Three Chopt Flying Club at KCHO, with a worked example of what a year of flying actually costs.">
+    <meta property="og:url" content="https://threechoptfc.org/membership.html">
+    <meta property="og:image" content="https://threechoptfc.org/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="N3275F, the club's Mooney M20F, parked in front of a hangar">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
         <nav>
-            <div class="logo">
-                <h1>Three Chopt Flying Club</h1>
-            </div>
+            <a class="logo" href="index.html">
+                <img src="img/logo-64.png" alt="" width="30" height="30">
+                <span>Three Chopt Flying Club</span>
+            </a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label class="nav-toggle-label" for="nav-toggle"><span class="bars"></span>Menu</label>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="membership.html">Membership</a></li>
+                <li><a href="membership.html" aria-current="page">Membership</a></li>
                 <li><a href="aircraft.html">Aircraft</a></li>
                 <li><a href="documents.html">Documents</a></li>
                 <li><a href="faq.html">FAQ</a></li>
@@ -24,89 +43,127 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main" tabindex="-1">
         <section class="page-header">
-            <h2>Membership Information</h2>
+            <h1>Membership Information</h1>
         </section>
 
         <section class="content-section">
-            <h3>Becoming a Member</h3>
-            <p>We are currently accepting applications for new members. To join the Club, you make a joining contribution (refundable in most cases) and pay an annual fee for aircraft fixed costs. Regular Members can pay the annual fee in monthly increments.</p>
+            <p>We are currently interviewing prospective members. To join the Club you make a joining contribution (refundable in most cases) and pay an annual fee toward the aircraft's fixed costs. Regular Members can pay the annual fee monthly.</p>
 
-            <div class="membership-types">
-                <div class="membership-type">
-                    <h4>Regular Plus Member</h4>
-                    <p class="membership-highlights">Voting rights and full aircraft access.</p>
-                    <ul>
-                        <li><strong>Refundable*:</strong> One-time $8,000 Membership Deposit</li>
-                        <li><strong>Non-Refundable:</strong> $90.83 / month membership fee</li>
-                    </ul>
-                </div>
-
-                <div class="membership-type">
-                    <h4>Regular Basic Member</h4>
-                    <p class="membership-highlights">Voting rights and full aircraft access.</p>
-                    <ul>
-                        <li><strong>Refundable*:</strong> 
-                            <ul>
-                                <li>One-time $500 Membership Deposit</li>
-                                <li>$25 / month loan principal up to $8,000 (can pay off early if desired)</li>
-                            </ul>
-                        </li>
-                        <li><strong>Non-Refundable:</strong>
-                            <ul>
-                                <li>$90.83 / month membership fee</li>
-                                <li>4.5% APR of outstanding principal balance each month (starts at $28.13 / month and decreases over time)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="membership-type">
-                    <h4>Associate Member (Social / Family / Student)</h4>
-                    <p class="membership-highlights">No voting rights and cannot solo aircraft.</p>
-                    <ul>
-                        <li><strong>Refundable*:</strong> $20 Membership fee</li>
-                        <li><strong>Non-Refundable:</strong> $40 / year</li>
-                    </ul>
-                </div>
+            <h2>Membership levels</h2>
+            <div class="tier-table-wrap">
+                <table class="tier-table">
+                    <caption class="visually-hidden">Comparison of the three membership levels</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">&nbsp;</th>
+                            <th scope="col">Regular Plus</th>
+                            <th scope="col">Regular Basic</th>
+                            <th scope="col">Associate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Refundable deposit<span class="footnote-ref">*</span></th>
+                            <td class="num">$8,000 one-time</td>
+                            <td class="num">$500 one-time, then $25/month toward an $8,000 principal (can be paid off early)</td>
+                            <td class="num">$20</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Non-refundable cost</th>
+                            <td class="num">$90.83/month</td>
+                            <td class="num">$90.83/month, plus 4.5% APR on the outstanding principal &mdash; starts at $28.13/month and decreases</td>
+                            <td class="num">$40/year</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Voting rights</th>
+                            <td>Yes &mdash; one vote</td>
+                            <td>Yes &mdash; one vote</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Aircraft access</th>
+                            <td>Full, after checkout</td>
+                            <td>Full, after checkout</td>
+                            <td>Cannot solo Club aircraft<span class="footnote-ref">&dagger;</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Best for</th>
+                            <td>Pilots who can fund the deposit up front</td>
+                            <td>Pilots who would rather build the deposit over time</td>
+                            <td>Family, social members, and student pilots training elsewhere</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <div class="note-section">
-                <p><strong>* Principal Refund Policy:</strong> The bylaws outline this specifically, but basically you can get your "refundable" amount back as long as the club can afford it, or are put in a queue waiting to be paid out when a new member joins to replace you.</p>
+                <p><strong>* Principal refund policy:</strong> the Operating Agreement sets this out specifically, but in short you can get your refundable amount back as long as the Club can afford it; otherwise you join a queue to be paid out when a new member replaces you.</p>
+                <p><strong>&dagger;</strong> Family Student Pilots may use Club aircraft, but their use is limited per the Operating Agreement.</p>
+            </div>
+
+            <div class="cost-example">
+                <h2>What it actually costs to fly</h2>
+                <p>A Regular Plus member flying 50 hours in a year, all in:</p>
+                <table class="cost-table">
+                    <tbody>
+                        <tr>
+                            <td>Annual dues &mdash; $90.83 &times; 12</td>
+                            <td class="num">$1,090</td>
+                        </tr>
+                        <tr>
+                            <td>Aircraft &mdash; 45 tach hours &times; $56.50</td>
+                            <td class="num">$2,543</td>
+                        </tr>
+                        <tr>
+                            <td>Fuel &mdash; about 475 gallons</td>
+                            <td class="num">$3,325</td>
+                        </tr>
+                        <tr class="total">
+                            <td>Total for the year</td>
+                            <td class="num">$6,958</td>
+                        </tr>
+                        <tr class="total">
+                            <td>Per hour flown</td>
+                            <td class="num">$139</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="cost-assumption">Assumes 50 hours on the Hobbs, billed at roughly 0.9 tach hours each; about 9.5 gallons per hour at $7.00 per gallon; and no loan interest, which a Regular Basic member would add. Fuel is the number that moves &mdash; the price changes constantly, so treat it as a ballpark and check with Signature Aviation for the day. The $8,000 deposit is not included because it is refundable.</p>
+                <p class="cost-assumption">For comparison, the <a href="faq.html#buy">FAQ</a> puts sole ownership of a comparable aircraft at around $20,000 a year.</p>
             </div>
 
             <div class="requirements-section">
-                <h4>Regular Member Requirements</h4>
-                <p>Regular Members have one vote and are allowed to fly our aircraft. To become one you must:</p>
+                <h2>Regular Member requirements</h2>
+                <p>Regular Members have one vote and may fly our aircraft. To become one you must:</p>
                 <ul>
                     <li>Hold at least a private pilot certificate</li>
                     <li>Hold a current medical certificate</li>
                     <li>Pass an interview with our Board of Directors</li>
                 </ul>
 
-                <h4>Checking Out in the Mooney</h4>
+                <h3>Checking out in the Mooney</h3>
                 <p>To solo N3275F you need:</p>
                 <ul>
                     <li>100 hours total time</li>
                     <li>A Club instructor sign-off</li>
-                    <li>Either 20 hours retractable-gear time plus 5 hours in the Mooney, <em>or</em> 10 hours in the Mooney</li>
+                    <li>Either 20 hours of retractable-gear time plus 5 hours in the Mooney, <em>or</em> 10 hours in the Mooney</li>
                 </ul>
                 <p>You can receive instruction in the Mooney before meeting these minimums, including working on your instrument rating. Several of our members joined with fewer than 100 hours and built the required time while earning their instrument rating in the Mooney.</p>
 
-                <h4>Associate Members</h4>
-                <p>Associate Members participate in our social activities but cannot vote or solo Club aircraft.<sup>*</sup> You need only a desire to share your interest in aviation and a recommendation for membership from a Director.</p>
+                <h3>Associate Members</h3>
+                <p>Associate Members take part in our social activities but cannot vote or solo Club aircraft. You need only a desire to share your interest in aviation and a recommendation for membership from a Director.</p>
                 <p>If you do not yet have your private pilot certificate but are interested in the Club, we encourage you to join as an Associate Member while you train with one of the local flight schools on their aircraft. <a href="contact.html">Contact us</a> if you would like information about local flight schools.</p>
-                <p><small><sup>*</sup> Family Student Pilots may use Club aircraft, but their use is limited per the Operating Agreement.</small></p>
             </div>
 
             <div class="process-section">
-                <h4>How to Join</h4>
-                <p>We are currently interviewing prospective members. If this sounds like something you would like to do, <a href="contact.html">get in touch</a> &mdash; we will match you with a sponsor who will take you through the process.</p>
+                <h2>How to join</h2>
+                <p>If this sounds like something you would like to do, <a href="contact.html">get in touch</a> &mdash; we will match you with a sponsor who will take you through the process.</p>
                 <ol>
                     <li>Email us to express interest</li>
                     <li>We match you with a member sponsor</li>
-                    <li>Meet the Club &mdash; a social hour or a visit to the hangar</li>
+                    <li>Meet the Club &mdash; at a cookout or a visit to the hangar</li>
                     <li>Interview with the Board of Directors</li>
                     <li>Review and sign the <a href="documents.html">Operating Agreement and membership application</a></li>
                     <li>Pay your membership deposit and first dues</li>
@@ -115,15 +172,17 @@
             </div>
 
             <div class="cta-section">
-                <p>Ready to take the next step? Contact our membership coordinator to schedule a visit:</p>
-                <a href="contact.html" class="btn btn-primary">Contact Us About Membership »</a>
+                <p>Ready to take the next step? Contact us to schedule a visit.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us About Membership &raquo;</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p><small>Contributions or gifts to Three Chopt Flying Club, LLC are not tax deductible. It is striving to be a non-profit 501(c)(7) social Club. All contents of this website are the property of Three Chopt Flying Club, LLC, are for informational purposes only, and are in no way contractual between the Company and its Members.</small></p>
-        <p>&copy; 2026 Three Chopt Flying Club. All rights reserved.</p>
+        <div class="footer-inner">
+            <p>Contributions or gifts to Three Chopt Flying Club, LLC are not tax deductible. It is striving to be a non-profit 501(c)(7) social Club. All contents of this website are the property of Three Chopt Flying Club, LLC, are for informational purposes only, and are in no way contractual between the Company and its Members.</p>
+            <p>&copy; Three Chopt Flying Club, LLC</p>
+        </div>
     </footer>
 </body>
 </html>
