@@ -1,0 +1,5 @@
+# Club operational notes — contain members' personal email addresses.
+# This is a public repo published to GitHub Pages; these must never be
+# committed. See ~/mooney/monticellofc-archive/DO-NOT-PUBLISH.md.
+namecheap-forwarders.txt
+mailboxes-csv-*.csv
