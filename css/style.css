@@ -249,16 +249,32 @@ main {
     padding: 15px;
 }
 
+/* Vertical rhythm for prose.
+   The `* { margin: 0 }` reset at the top of this file strips the browser's
+   default margins from <p> and headings, and nothing restored them, so
+   paragraphs ran together and headings sat flush against the text above
+   while still having space beneath. Restore both here, giving headings more
+   room above than below so each one groups with the text it introduces. */
+.content-section p {
+    margin-bottom: 1em;
+}
+
 .content-section h3 {
     color: #333;
-    margin-bottom: 15px;
+    margin-top: 1.8em;
+    margin-bottom: 0.6em;
     font-size: 22px;
 }
 
 .content-section h4 {
     color: #428bca;
-    margin: 20px 0 10px;
+    margin: 1.5em 0 0.5em;
     font-size: 16px;
+}
+
+/* A section's first element should not be pushed away from the heading bar. */
+.content-section > :first-child {
+    margin-top: 0;
 }
 
 /* Lists */
